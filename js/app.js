@@ -197,6 +197,28 @@
       }
     });
   });
+  /* ---------- Scheduled Publishing ---------- */
+  (function () {
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    // Hide unpublished posts on homepage
+    document.querySelectorAll('[data-publish-date]').forEach(function (el) {
+      var pubDate = new Date(el.getAttribute('data-publish-date') + 'T00:00:00');
+      if (pubDate > today) {
+        el.style.display = 'none';
+      }
+    });
+
+    // Hide unpublished sitemap entries
+    document.querySelectorAll('.sitemap-list [data-publish-date]').forEach(function (el) {
+      var pubDate = new Date(el.getAttribute('data-publish-date') + 'T00:00:00');
+      if (pubDate > today) {
+        el.style.display = 'none';
+      }
+    });
+  })();
+
   /* ---------- FAQ Accordion ---------- */
   document.querySelectorAll('.article-content h3[id^="faq-"]').forEach(function (q) {
     q.addEventListener('click', function () {
