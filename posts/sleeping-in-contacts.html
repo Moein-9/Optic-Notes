@@ -51,6 +51,10 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://opticnotes.ca/posts/sleeping-in-contacts"
+    },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".tldr", ".callout"]
     }
   }
   </script>
@@ -100,6 +104,43 @@
           "@type": "Answer",
           "text": "Remove the lenses immediately (after rewetting if they're stuck), and do not put them back in. If you have redness, pain, light sensitivity, or blurred vision that does not improve within a few hours, see your optometrist the same day. These are signs of a possible corneal infection, and early treatment with prescription antibiotic drops is critical to preventing scarring."
         }
+      }
+    ]
+  }
+  </script>
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Safely Remove Contact Lenses After Sleeping in Them",
+    "description": "Step-by-step instructions for safely removing contact lenses after accidentally sleeping in them overnight.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Apply rewetting drops",
+        "text": "Put rewetting drops or sterile saline in your eyes. If you do not have rewetting drops, sterile saline (not tap water) works."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Wait for lenses to rehydrate",
+        "text": "Wait 10 to 15 minutes. Blink gently. Let the lens rehydrate and loosen from the corneal surface."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Test the lens",
+        "text": "Look up and try to slide the lens down with your finger. If it moves freely, remove it normally. If still stuck, add more drops and wait longer."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Assess your eyes",
+        "text": "After removal, check for redness, pain, blurred vision, or light sensitivity. Mild dryness and slight redness are normal and should resolve within an hour or two."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Give your eyes a break",
+        "text": "Wear your glasses for the rest of the day. Let your corneas recover fully before putting lenses back in."
       }
     ]
   }
@@ -171,6 +212,10 @@
 
       <p>As a licensed optician, I've seen the other side of that gamble. I've watched patients come in with corneal ulcers, angry red eyes, and vision damage that could have been avoided by a 30-second bedtime routine. Can you sleep in contacts? Technically, some are approved for it. Should you? Almost never. Here's why.</p>
 
+      <div class="tldr">
+        <strong>TL;DR:</strong> Sleeping in contacts raises your corneal infection risk 6 to 8 times, even for just one night. If you accidentally fall asleep in them, use rewetting drops and wait 10 to 15 minutes before removing. Daily disposable lenses are the simplest way to eliminate the temptation entirely.
+      </div>
+
       <h2 id="section-1">What Happens to Your Eyes When You Sleep in Contacts</h2>
 
       <p>Your cornea has no blood vessels. It gets its oxygen directly from the air through your tear film. When you're awake with contacts in, blinking constantly refreshes that tear film and delivers oxygen to the cornea. It's not ideal, but it works well enough for a full day of wear.</p>
@@ -187,6 +232,7 @@
 
       <p>People sleep in their contacts all the time and nothing happens, so how bad can it really be? The numbers from published research paint a clear picture.</p>
 
+      <div class="table-wrap">
       <table>
         <thead>
           <tr>
@@ -223,6 +269,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
 
       <p>The CDC's <a href="https://www.cdc.gov/mmwr/volumes/67/wr/mm6732a2.htm" target="_blank" rel="noopener">Morbidity and Mortality Weekly Report on contact lens-related infections</a> identified sleeping in contact lenses as the single greatest modifiable risk factor for corneal infections. Not dirty cases. Not old solution. Sleeping in them.</p>
 
@@ -244,6 +291,7 @@
 
       <p>This is the most common pushback I get. "My contacts are approved for sleeping." And that may be true. Some lenses, like Air Optix Night & Day Aqua (lotrafilcon A) and Biofinity (comfilcon A), have FDA and Health Canada approval for extended or continuous wear.</p>
 
+      <div class="table-wrap">
       <table>
         <thead>
           <tr>
@@ -285,6 +333,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
 
       <p>Extended wear lenses transmit significantly more oxygen than regular soft lenses. The Dk/t (oxygen transmissibility) of Air Optix Night & Day is around 175, compared to 20-30 for many standard hydrogel lenses. That's a meaningful difference. Your cornea does get more oxygen overnight with these lenses than with a standard daily wear lens.</p>
 
