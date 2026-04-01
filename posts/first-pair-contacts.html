@@ -48,6 +48,10 @@
       "name": "Optic Notes",
       "url": "https://opticnotes.ca"
     },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".tldr", ".callout"]
+    },
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://opticnotes.ca/posts/stye-treatment"
@@ -128,6 +132,43 @@
     ]
   }
   </script>
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Insert and Remove Contact Lenses for Beginners",
+    "description": "Step-by-step guide for putting in and taking out contact lenses for the first time.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Wash and dry your hands",
+        "text": "Wash your hands thoroughly with soap and water, then dry with a lint-free towel. This prevents transferring bacteria or debris to the lens."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Check the lens orientation",
+        "text": "Place the lens on your fingertip and look at it from the side. It should form a smooth bowl shape. If the edges flare outward, the lens is inside out."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Insert the lens",
+        "text": "Use your non-dominant hand to hold your upper eyelid open. Pull your lower eyelid down with the middle finger of your dominant hand. Look up slightly and place the lens on the white of your eye below your iris, then look down slowly to center it."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Blink gently to settle",
+        "text": "Release your eyelids and blink gently a few times. The lens should center itself on your cornea. If your vision is clear and comfortable, the lens is in place."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Remove the lens",
+        "text": "Look up, pull your lower lid down, and slide the lens to the white of your eye with your index finger. Pinch the lens gently between your thumb and index finger to remove it."
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -195,7 +236,11 @@
 
       <p>Here is what I tell every patient who comes to me with a stye: the treatment is boring, it is simple, and it works. But you have to actually do it consistently, and you have to stop doing the things that make it worse.</p>
 
-      <h2 id="section-1">What Exactly Is a Stye?</h2>
+            <div class="tldr">
+        <strong>TL;DR:</strong> Getting your first contacts takes patience. The insertion and removal learning curve is real but most people get comfortable within a week. Always wash your hands before handling lenses, never sleep in them unless specifically approved, and follow the replacement schedule exactly. Daily disposables are the easiest option for beginners because there is no cleaning routine.
+      </div>
+
+<h2 id="section-1">What Exactly Is a Stye?</h2>
 
       <p>A stye (the medical term is hordeolum) is a small, painful bump that develops on or inside the eyelid. It happens when one of the tiny oil glands along the lash line gets blocked and infected, usually by Staphylococcus aureus bacteria. Think of it like a clogged pore, except it is on one of the most sensitive areas of your body.</p>
 
@@ -207,6 +252,7 @@
 
       <p>This is the first thing I clarify with patients because the treatment approach differs. A stye is an acute infection. A chalazion is a chronic, non-infectious blockage. They can look similar from the outside, but they behave differently.</p>
 
+      <div class="table-wrap">
       <table>
         <thead>
           <tr>
@@ -253,6 +299,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
 
       <p>Here is the thing that confuses people: a stye can turn into a chalazion. If the infection clears but the gland remains blocked, you are left with a firm, painless lump. That is why proper treatment early on matters so much. Resolve the blockage while it is still acute, and you avoid dealing with a stubborn chalazion that sticks around for months.</p>
 
@@ -274,6 +321,7 @@
 
       <p>Here is the schedule I recommend to patients:</p>
 
+      <div class="table-wrap">
       <table>
         <thead>
           <tr>
@@ -310,6 +358,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
 
       <p>The biggest problem is that people give up after two days because the stye has not disappeared. Warm compresses are not instant. They work gradually by softening the blockage and allowing it to drain on its own. Most styes take a full week or two to resolve completely.</p>
 
@@ -347,6 +396,7 @@
 
       <p>Most styes resolve at home with warm compresses and patience. But some need help. Here is when you should stop home treating and see your eye doctor:</p>
 
+      <div class="table-wrap">
       <table>
         <thead>
           <tr>
@@ -388,6 +438,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
 
       <p>If your doctor determines the stye needs drainage, the procedure is quick and done under local anaesthetic. They make a tiny incision on the inside of the eyelid (so no visible scar), drain the contents, and you go home the same day. It sounds worse than it is.</p>
 
