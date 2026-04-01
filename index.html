@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optic Notes — Eye Health & Optical Knowledge</title>
+  <meta name="description" content="Clear, practical insights on eye health, lenses, and vision care. Written for real people, not textbooks.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://opticnotes.ca/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Optic Notes — Eye Health & Optical Knowledge">
+  <meta property="og:description" content="Clear, practical insights on eye health, lenses, and vision care.">
+  <meta property="og:url" content="https://opticnotes.ca/">
+  <meta property="og:site_name" content="Optic Notes">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;500;600;700&family=Radio+Canada+Big:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Optic Notes",
+    "description": "Eye health and optical knowledge for everyday life.",
+    "url": "https://opticnotes.ca",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Optic Notes"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Hidden SVG sprite -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="icon-menu" viewBox="0 0 24 24">
+      <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24">
+      <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+    </symbol>
+    <symbol id="icon-arrow-up" viewBox="0 0 24 24">
+      <line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/>
+    </symbol>
+  </svg>
+
+  <!-- Nav -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="/" class="nav__brand"><img src="assets/logo.png" alt="Optic Notes" class="nav__logo"></a>
+      <ul class="nav__links">
+        <li><a href="/" class="active">Articles</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="nav__mobile-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg><use href="#icon-menu"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <span class="hero__tagline reveal">Eye Care, Explained Simply</span>
+        <h1 class="hero__title reveal">Optic Notes</h1>
+        <p class="hero__subtitle reveal">Clear, practical insights on eye health, lenses, and vision care. Written for real people, not textbooks.</p>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+      <div class="container">
+        <div class="categories__list" role="tablist" aria-label="Filter articles by category">
+          <button class="category-btn active" data-category="all" role="tab" aria-selected="true">All</button>
+          <button class="category-btn" data-category="eye-health" role="tab" aria-selected="false">Eye Health</button>
+          <button class="category-btn" data-category="lenses" role="tab" aria-selected="false">Lenses</button>
+          <button class="category-btn" data-category="style" role="tab" aria-selected="false">Style</button>
+          <button class="category-btn" data-category="insurance" role="tab" aria-selected="false">Insurance</button>
+          <button class="category-btn" data-category="kids-vision" role="tab" aria-selected="false">Kids Vision</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Posts Grid -->
+    <section class="posts-section">
+      <div class="container">
+        <div class="posts-grid reveal-stagger">
+
+          <!-- Featured Post — Week 1 Mon -->
+          <a href="posts/polysporin-eye-drops.html" class="post-card post-card--featured reveal" data-category="eye-health">
+            <div class="post-card__image post-card__image--placeholder grad-eye-health">
+            </div>
+            <div class="post-card__body">
+              <div class="post-card__meta">
+                <span class="post-card__category">Eye Health</span>
+                <span class="post-card__dot"></span>
+                <span class="post-card__date">Apr 7, 2026</span>
+                <span class="post-card__dot"></span>
+                <span class="post-card__read-time">11 min read</span>
+              </div>
+              <h2 class="post-card__title">Patients Ask Me About Polysporin Eye Drops Every Day. Here's What I Tell Them.</h2>
+              <p class="post-card__excerpt">What these OTC drops actually treat, what they don't, side effects to watch for, and when you should skip the drops and see your eye doctor instead. Plus a pink eye comparison table.</p>
+            </div>
+          </a>
+
+          <!-- Post 2 — Week 1 Wed -->
+          <a href="posts/how-to-read-glasses-prescription.html" class="post-card reveal" data-category="lenses">
+            <div class="post-card__image post-card__image--placeholder grad-lenses">
+            </div>
+            <div class="post-card__body">
+              <div class="post-card__meta">
+                <span class="post-card__category">Lenses</span>
+                <span class="post-card__dot"></span>
+                <span class="post-card__date">Apr 9, 2026</span>
+                <span class="post-card__dot"></span>
+                <span class="post-card__read-time">9 min read</span>
+              </div>
+              <h3 class="post-card__title">The 3 Numbers on Your Glasses Prescription That Actually Matter</h3>
+              <p class="post-card__excerpt">SPH, CYL, AXIS, ADD, PD — what every number means in plain English, what your prescription says about your vision, and how long it's valid in Alberta.</p>
+            </div>
+          </a>
+
+          <!-- Post 3 — Week 1 Fri -->
+          <a href="posts/daily-vs-monthly-contacts.html" class="post-card reveal" data-category="eye-health">
+            <div class="post-card__image post-card__image--placeholder grad-general">
+            </div>
+            <div class="post-card__body">
+              <div class="post-card__meta">
+                <span class="post-card__category">Contacts</span>
+                <span class="post-card__dot"></span>
+                <span class="post-card__date">Apr 11, 2026</span>
+                <span class="post-card__dot"></span>
+                <span class="post-card__read-time">8 min read</span>
+              </div>
+              <h3 class="post-card__title">I Wore Monthly Contacts for 10 Years. Then I Switched to Dailies.</h3>
+              <p class="post-card__excerpt">Real Canadian pricing, comfort differences, Alberta insurance coverage, and a side-by-side comparison table. Plus the math on when dailies are actually cheaper.</p>
+            </div>
+          </a>
+
+          <!-- Post 4 -->
+          <a href="posts/template.html" class="post-card reveal" data-category="style">
+            <div class="post-card__image post-card__image--placeholder grad-style">
+            </div>
+            <div class="post-card__body">
+              <div class="post-card__meta">
+                <span class="post-card__category">Style</span>
+                <span class="post-card__dot"></span>
+                <span class="post-card__date">Mar 12, 2026</span>
+                <span class="post-card__dot"></span>
+                <span class="post-card__read-time">4 min read</span>
+              </div>
+              <h3 class="post-card__title">How to Pick Frames That Actually Suit Your Face</h3>
+              <p class="post-card__excerpt">Forget the old "round face = square frames" rule. Modern frame fitting is simpler, more personal, and way more fun than you think.</p>
+            </div>
+          </a>
+
+          <!-- Post 5 -->
+          <a href="posts/template.html" class="post-card reveal" data-category="insurance">
+            <div class="post-card__image post-card__image--placeholder grad-insurance">
+            </div>
+            <div class="post-card__body">
+              <div class="post-card__meta">
+                <span class="post-card__category">Insurance</span>
+                <span class="post-card__dot"></span>
+                <span class="post-card__date">Mar 5, 2026</span>
+                <span class="post-card__dot"></span>
+                <span class="post-card__read-time">5 min read</span>
+              </div>
+              <h3 class="post-card__title">Understanding Your Optical Benefits in Alberta</h3>
+              <p class="post-card__excerpt">Alberta Blue Cross, Canada Life, AISH coverage... it can get confusing. Here is a plain-language guide to what is typically covered and how to use your benefits before they expire.</p>
+            </div>
+          </a>
+
+          <!-- Post 6 -->
+          <a href="posts/template.html" class="post-card reveal" data-category="eye-health">
+            <div class="post-card__image post-card__image--placeholder grad-eye-health">
+            </div>
+            <div class="post-card__body">
+              <div class="post-card__meta">
+                <span class="post-card__category">Eye Health</span>
+                <span class="post-card__dot"></span>
+                <span class="post-card__date">Feb 26, 2026</span>
+                <span class="post-card__dot"></span>
+                <span class="post-card__read-time">6 min read</span>
+              </div>
+              <h3 class="post-card__title">Stye on Your Eyelid? Here Is What to Do (and What to Skip)</h3>
+              <p class="post-card__excerpt">A stye is a small, painful bump that shows up on your eyelid. Most go away on their own, but some habits make them worse. Here is what eye care professionals actually recommend.</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter reveal">
+      <div class="container">
+        <div class="newsletter__inner">
+          <h2 class="newsletter__title">Stay in the loop</h2>
+          <p class="newsletter__text">New articles on eye health, lens tech, and vision tips. No spam, no fluff. Just useful stuff, once or twice a month.</p>
+          <form class="newsletter__form" aria-label="Newsletter signup">
+            <input type="email" class="newsletter__input" placeholder="your@email.com" required aria-label="Email address">
+            <button type="submit" class="newsletter__btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand"><img src="assets/logo.png" alt="Optic Notes" class="footer__logo"></div>
+      <ul class="footer__links">
+        <li><a href="/">Articles</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <p class="footer__copy">Optic Notes is a Canadian eye care knowledge project. Content is for informational purposes only and does not replace professional medical advice.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg><use href="#icon-arrow-up"/></svg>
+  </button>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
