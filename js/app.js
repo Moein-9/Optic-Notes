@@ -41,14 +41,31 @@
     });
   }
 
-  /* ---------- Category filter ---------- */
+  /* ---------- Scheduled Publishing ---------- */
+  var today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  function isPublished(el) {
+    var dateStr = el.getAttribute('data-publish-date');
+    if (!dateStr) return true;
+    return new Date(dateStr + 'T00:00:00') <= today;
+  }
+
+  // Hide all unpublished elements (posts, sitemap entries)
+  document.querySelectorAll('[data-publish-date]').forEach(function (el) {
+    if (!isPublished(el)) {
+      el.style.display = 'none';
+      el.setAttribute('data-unpublished', 'true');
+    }
+  });
+
+  /* ---------- Category filter (respects publish dates) ---------- */
   const categoryBtns = document.querySelectorAll('.category-btn');
   const postCards = document.querySelectorAll('.post-card[data-category]');
 
   if (categoryBtns.length && postCards.length) {
     categoryBtns.forEach(btn => {
       btn.addEventListener('click', () => {
-        // Update active state
         categoryBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
 
@@ -56,6 +73,11 @@
         let anyVisible = false;
 
         postCards.forEach(card => {
+          // Always hide unpublished
+          if (card.getAttribute('data-unpublished') === 'true') {
+            card.style.display = 'none';
+            return;
+          }
           if (filter === 'all' || card.dataset.category === filter) {
             card.style.display = '';
             anyVisible = true;
@@ -64,7 +86,6 @@
           }
         });
 
-        // Show empty state
         const grid = document.querySelector('.posts-grid');
         let emptyEl = grid.querySelector('.posts-empty');
         if (!anyVisible) {
@@ -197,28 +218,6 @@
       }
     });
   });
-  /* ---------- Scheduled Publishing ---------- */
-  (function () {
-    var today = new Date();
-    today.setHours(0, 0, 0, 0);
-
-    // Hide unpublished posts on homepage
-    document.querySelectorAll('[data-publish-date]').forEach(function (el) {
-      var pubDate = new Date(el.getAttribute('data-publish-date') + 'T00:00:00');
-      if (pubDate > today) {
-        el.style.display = 'none';
-      }
-    });
-
-    // Hide unpublished sitemap entries
-    document.querySelectorAll('.sitemap-list [data-publish-date]').forEach(function (el) {
-      var pubDate = new Date(el.getAttribute('data-publish-date') + 'T00:00:00');
-      if (pubDate > today) {
-        el.style.display = 'none';
-      }
-    });
-  })();
-
   /* ---------- FAQ Accordion ---------- */
   document.querySelectorAll('.article-content h3[id^="faq-"]').forEach(function (q) {
     q.addEventListener('click', function () {
