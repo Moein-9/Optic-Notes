@@ -169,8 +169,8 @@ h1, h2, h3, h4 {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: #1a1a1a;
-  border-bottom: 1px solid #333;
+  background: #000000;
+  border-bottom: 1px solid #000000;
   transition: box-shadow 0.3s var(--ease-out);
 }
 
